@@ -1,0 +1,117 @@
+.app {
+	font-family: f(sans-serif);
+	font-weight:normal;
+	&__title {
+		font-size: 44px;
+		color: c(light-blue);
+		margin-bottom: 35px;
+		@include under(sm-smaller) {
+			font-size: 20px;
+			margin-bottom: 5px;
+		}
+		@include under(xs) {
+			    margin-right: -30px;
+		}
+	}
+	&__sub-title {
+		font-size: 29px;
+		color: c(darky-gray);
+		margin-bottom: 34px;
+		letter-spacing: 4px;
+		font-family: f(sans-serif);
+		font-weight:normal;
+		@include under(sm-smaller) {
+			font-size: 14px;
+			margin-bottom: 0px;
+			letter-spacing: 1px;
+		}
+	}
+	&__content {
+		font-size: 18px;
+		line-height: 20px;
+		font-family: f(sans-serif);
+		font-weight:normal;
+		@include under(sm-smaller) {
+			font-size: 12px;
+			line-height: normal;
+		}
+		@include under(320px) {
+			font-size: 10px;
+		}
+	}
+	&__text-box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: normal;
+		padding-left: 130px;
+		@include under(sm) {
+			
+			width: 50%;
+		}
+		@include under(bag) {
+			padding-left: 0px;
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+		@include under(sm-smaller) {
+			padding-left: 40px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			justify-content: space-evenly;
+		}
+		@include under(xs) {
+			
+			padding-left: 0px;
+			width: 50%;
+		}
+	}
+	&__image-box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@include under(sm) {
+		    width: 50%;
+		    overflow: hidden;
+		}
+		@include under(xs) {
+		    width: 50%;
+		    overflow: hidden;
+		}
+	}
+	&__phone {
+		height: auto;
+		max-width: 338px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		transform: rotate(-18deg);
+		margin-top: 30px;
+		margin-bottom: 20px;
+		@include under(sm) {
+     		transform:none;
+		}
+		
+	}
+	&__logos{
+		display: flex;
+		justify-content: space-between;
+		max-width:300px;
+		position: relative;
+	}
+
+	&__logo {
+		width: 100%;
+		&--min{
+			margin-right: 10px;
+			max-width: 119px;
+			@include under(sm-smaller) {
+				max-width: 80px;
+
+			}
+		}
+	}
+	&__aprende {
+        justify-content: center;
+    }
+}

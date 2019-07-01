@@ -1,0 +1,138 @@
+.botalo {
+    &__slider {
+        @include slick-arrow;
+
+        background-color:c(slider-gray);
+        width: 100%;
+        height: 300px;
+        display: none;
+        @include under(sm){
+            display:block;
+        }
+
+        &-slide_text{
+            font-size:22px;
+            text-align: center;
+            @include under(sm){
+                padding: 80px 50px;
+                font-size: 18px;
+            }
+            @include under(xs) {
+                    padding: 25px 50px;
+            }
+        }
+
+        background-color: c(slider-gray);
+        width: 100%;
+        height: auto;
+        display: none;
+        @include under(sm){
+            display:block;
+        }
+    }
+
+    &__politicas{
+        &-container {
+            padding: 0 20px;
+            background-color: c(slider-gray);
+            @include under(sm){
+                display:none;
+            }
+            .estaciones__title-container{
+                max-width: 1200px;
+                padding: 45px 0px 45px 0px;
+            }
+            .botalo__politicas-container .section__containerText {
+                padding: 45px 0px 45px 0px;
+            }
+            .section__descrption{
+                padding: 45px 0px 0px 0px;
+            }
+            .section__descrption{
+                line-height: 34px;
+                color: c(darky-gray);
+            }
+        }
+
+        &--text{
+            line-height: 1.6;
+            @include under(sm-smaller) {
+                font-size: 14px;
+                font-family: f(sans-serif);
+                font-weight: normal;
+            }
+        }
+    }
+
+    &__slider {
+        position: relative;
+        padding-top: 40px;
+        font-size: 20px;
+        text-align: center;
+
+        &-title {
+            @include center('x');
+            top: 10px;
+            z-index: 1;
+        }
+
+        &-slide {
+            outline: none !important;
+        }
+
+        .slick-prev, .slick-next {
+            height: 10px;
+            width: 10px;
+            top: 110px;
+            @include under(xs) {
+                top: 42px;
+            }
+        }
+
+        .slick-prev{
+            z-index: 1111;
+        }
+    }
+
+    &__titleCuadricula{
+        display: none;
+        @include under(three){
+            display: block;
+            font-size: 30px;
+        }
+    }
+
+    &__line{
+            margin: 0;
+            @include under(sm){
+            margin-top: 80px;
+        }
+    }
+}
+
+	.three-images{
+	    @include under(sm){
+	        padding: 0%;
+	    }
+	    &__title{
+	        @include under(three){
+	            display:none;
+	        }
+	    }
+}
+.aprende_button {
+	@include under(xs){
+		margin-bottom: 25px;
+	}
+}
+.aprende_arrow {
+	@include under(xs){
+    	left: 46%;
+	}
+}
+
+.botalo__slider-title{
+    .estaciones__title{
+            padding: 0px 0px !important;
+    }
+}

@@ -1,0 +1,42 @@
+.emprendedores {
+	text-align: center;
+	&__container {
+		@include center('xy');
+		width: 100%;
+		max-width: 600px;
+
+		@include under(sm-smaller) {
+			padding: 0 10px;
+		}
+	}
+	&__phrase {
+		font-size: 44px;
+		padding-bottom: 10px;
+		@include under(sm-smaller) {
+			font-size: 30px;
+		}
+		@include under(xs) {
+			font-size: 25px;
+		}
+	}
+	&__cite {
+		font-family: f(sans-serif);
+		font-weight: 200;
+		font-size: 32px;
+		@include under(sm-smaller) {
+			font-size: 20px;
+		}
+		@include under(xs) {
+			font-size: 16px;
+		}
+	}
+}
+
+
+.grid__box--emprendedores {
+	@include under(xs) {
+		height: 100px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}

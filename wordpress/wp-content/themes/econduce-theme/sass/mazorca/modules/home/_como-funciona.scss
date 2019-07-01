@@ -1,0 +1,146 @@
+.como-funciona {
+	color: c(white);
+	background-image: url('../images/Recurso36.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	&__numero {
+		border: 1px solid white;
+		font-family: f(sans-serif);
+		font-weight: 300;
+		font-size: 30px;
+		color: c(white);
+		border-left: none;
+		width: 44px;
+		text-align: center;
+		&-1{
+			//margin-left: -8%;
+		}
+		@include under (three) {
+			border-top: none ;
+		}
+	}
+	&__cta {
+		@include center('xy');
+		width: 100%;
+		text-align: center;
+		font-size: 20px;
+		font-family: f(sans-serif);
+		font-weight: normal;
+		color: c(dark-gray);
+		&-container {
+			@include center('xy');
+			background-color: rgba(255,255,255,0.8);
+			width: 170px;//calc(100% - 10px)
+			height: 170px;
+			border-radius: 100%;
+			transition: all 0.3s ease;
+			opacity: 0;
+			@include under(sm){
+				width: 87px;
+				height: 87px;
+			}
+		}
+		@include under(sm){
+			font-size: 15px;
+		}
+	}
+	&__imagen {
+		width: 100%;
+		margin: 9.8% auto 4% auto;
+    	position: relative;
+    	max-width: 170px;
+		&:hover {
+			.como-funciona__cta-container {
+				opacity: 1;
+			}
+		}
+		@include under (three) {
+			margin: 5% auto;;
+		}
+		@include under(sm){
+			width: 87px;
+		    height: 87px;
+		    margin: 0% auto 4% auto;
+		}
+		@include under(xs){
+			margin: -15px auto 4% auto;
+		}
+
+	}
+	&__paragraph {
+		text-align: center;
+		padding: 0% 5%;
+		&-linea1 {
+			font-family: f(sans-serif);
+			font-weight:normal;
+			font-size: 24px;
+			margin-bottom: 5px;
+			@include under(sm-smaller) {
+				font-size: 15px;
+				line-height: 7px;
+			}
+		}
+		&-linea2 {
+			font-family: f(sans-serif);
+			font-weight:normal;
+			font-size: 17px;
+			line-height: 20px;
+			u {
+				color: c(underline-color);
+
+			}
+			@include under(sm-smaller) {
+				font-size: 14px;
+			    padding: 0px 26px;
+			}
+		}
+	}
+	&__lineas {
+		border-left: 1px solid white;
+		border-right: 1px solid white;
+		@include under (three) {
+			border: none;
+		}
+		&--responsive {
+			border-top: none;
+			@include under (three) {
+				border-top: 1px solid white;
+			}
+		}
+	}
+	&__altura {
+		padding-bottom: 45px;
+		@include under(sm-smaller){
+			padding-bottom: 13px;
+		}
+	}
+	&__title {
+		font-size: 28px;
+		font-weight: 400;
+		@include center('x');
+		position: absolute;
+		top: 10%;
+		text-align: center;
+		@include under(three) {
+			top: 2%;
+		}
+		@include under(three) {
+			font-size: 20px;
+			display: none;
+		}
+		&--mobil{
+			@include over(three){
+				display: none;
+			}
+
+			@include under(three){
+				font-size: 20px;
+				text-align: center;
+				padding: 14px 0px 18px 0px;
+	    		letter-spacing: 1px;
+	    		font-weight: 400;
+			}
+		}
+	}
+
+}

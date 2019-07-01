@@ -1,0 +1,35 @@
+.error_404 { 
+	.counter__container {
+		display: none !important;
+	}
+	.counter__main-ttl {
+		padding-top: 14vh;
+		font-weight: 500;
+		text-shadow: 3px 3px 5px rgba(150, 150, 196, 1);
+		@include under (sm) {
+			padding-top: 8vh;
+		}
+		@include under (sm-smaller) {
+			padding-top: 2vh;
+		}
+	}
+	&--ttl {
+		font-size: 60px;
+		@include under (sm) {
+			font-size: 40px;
+		}
+		@include under (sm-smaller) {
+			font-size: 25px;
+		}
+	}
+	&--subttl {
+		font-size: 35px;
+		@include under (sm) {
+			font-size: 28px;
+		}
+		@include under (sm-smaller) {
+			font-size: 18px;
+			padding: 10px 250px;
+		}
+	}
+}

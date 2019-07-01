@@ -1,0 +1,63 @@
+//_________________________ Config:Fuentes _________________________ \\
+
+/**
+ * Declare fonts using the Mixin light es 200
+ */
+
+@include declara-font-face(ProximaNovaCondensed, '../fonts/ProximaNovaCond-Black', normal);
+@include declara-font-face(ProximaNovaCondensed, '../fonts/ProximaNovaCond-BlackIt', normal, italic);
+
+@include declara-font-face(ProximaNovaCondensed, '../fonts/ProximaNovaCond-Bold', bold);
+@include declara-font-face(ProximaNovaCondensed, '../fonts/ProximaNovaCond-BoldIt', bold, italic);
+
+@include declara-font-face(ProximaNovaCondensed, '../fonts/ProximaNovaCond-Extrabld', 700);
+@include declara-font-face(ProximaNovaCondensed, '../fonts/ProximaNovaCond-ExtrabldIt', 700, italic);
+
+@include declara-font-face(ProximaNovaCondensed, '../fonts/ProximaNovaCond-Light', 300);
+@include declara-font-face(ProximaNovaCondensed, '../fonts/ProximaNovaCond-LightIt', 300, italic);
+
+@include declara-font-face(ProximaNovaCondensed, '../fonts/ProximaNovaCond-Regular', normal);
+@include declara-font-face(ProximaNovaCondensed, '../fonts/ProximaNovaCond-RegularIt', normal, italic);
+
+@include declara-font-face(ProximaNovaCondensed, '../fonts/ProximaNovaCond-Semibold', 500);
+@include declara-font-face(ProximaNovaCondensed, '../fonts/ProximaNovaCond-SemiboldIt', 500, italic);
+
+@include declara-font-face(ProximaNovaCondensed, '../fonts/ProximaNovaCond-Thin', 200);
+@include declara-font-face(ProximaNovaCondensed, '../fonts/ProximaNovaCond-ThinIt', 200, italic);
+
+@include declara-font-face(ProximaNova, '../fonts/ProximaNova-Black', normal);
+@include declara-font-face(ProximaNova, '../fonts/ProximaNova-BlackIt', normal, italic);
+
+@include declara-font-face(ProximaNova, '../fonts/ProximaNova-Bold', bold);
+@include declara-font-face(ProximaNova, '../fonts/ProximaNova-BoldIt', bold, italic);
+
+@include declara-font-face(ProximaNova, '../fonts/ProximaNova-Extrabld', 700);
+@include declara-font-face(ProximaNova, '../fonts/ProximaNova-ExtrabldIt', 700, italic);
+
+@include declara-font-face(ProximaNova, '../fonts/ProximaNova-Light', 300);
+@include declara-font-face(ProximaNova, '../fonts/ProximaNova-LightIt', 300, italic);
+
+@include declara-font-face(ProximaNova, '../fonts/ProximaNova-Regular', normal);
+@include declara-font-face(ProximaNova, '../fonts/ProximaNova-RegularIt', normal, italic);
+
+@include declara-font-face(ProximaNova, '../fonts/ProximaNova-Semibold', 500);
+@include declara-font-face(ProximaNova, '../fonts/ProximaNova-SemiboldIt', 500, italic);
+
+@include declara-font-face(ProximaNova, '../fonts/ProximaNovaT-Thin', 200);
+@include declara-font-face(ProximaNova, '../fonts/ProximaNova-ThinIt', 200, italic);
+
+@include declara-font-face(Gotham, '../fonts/Gotham-Medium', 200);
+
+/// Refer to font families through mapped variables.
+/// Font families must be written as lists, that is, between parenthesis.
+///
+///
+$fonts:(
+	sans-serif: ('ProximaNova', sans-serif),
+	condensed: ('ProximaNovaCondensed', sans-serif),
+	gotham: ('Gotham', sans-serif)
+);
+
+@function f($font) {
+	@return map-get($fonts, $font);
+}

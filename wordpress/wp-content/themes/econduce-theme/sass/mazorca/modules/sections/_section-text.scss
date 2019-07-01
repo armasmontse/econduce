@@ -1,0 +1,38 @@
+.section__descrption{
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 19px;
+    padding: 27px 0px 0px 0px;
+    @include under(xs){
+        padding: 10px 10px 0px 10px;
+    }
+}
+
+.section__containerText{
+    padding: 35px 40px;
+    @include under(sm){
+        padding: 15px 15px;
+        max-width: 100%;
+    }
+    // @include under(md-medium){
+    //     max-width: 720px;
+    // }
+    // @include under(sm){
+    //     max-width: 550px;
+    // }
+    // @include under(sm-smaller){
+    //     max-width: 450px;
+    // }
+    // @include under(xs){
+    //     max-width: 300px;
+    // }
+
+
+    &--left{
+        top:50px;
+    }
+    &--right{
+        top:50px;
+    }
+}

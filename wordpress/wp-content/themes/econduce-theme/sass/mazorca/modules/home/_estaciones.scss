@@ -1,0 +1,66 @@
+.estaciones {
+	&__title {
+		@extend %title-with-dash;
+		font-size: 32px;
+	    text-align: center;
+	    padding: 0px 0px;
+	    color:#666;
+		letter-spacing: 3px;
+		font-weight: 400;
+		@include under(xs){
+			padding: 0 8% !important;
+		}
+	    span{
+	    	color:#6BBEC7;
+	    }
+		@include under(sm) {
+			padding: 0px 30px;
+		}
+		@include under(sm-smaller) {
+			font-size: 20px;
+			padding: 10px 0px;
+		}
+		&-container {
+			position: relative;
+			max-width: 850px;
+			@include under(sm) {
+				max-width: 700px;
+				padding: 17px 0% 21px 0%; 
+			}
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 35px 0%;
+		}
+	}
+	&__searcher {
+		border: #999999 1px solid;
+		font-family: f(sans-serif);
+		font-weight:300;
+		font-size: 20px;
+		height: 50px;
+		border-radius: 6px !important;
+		&-img-pin {
+			background-image: url('../images/icons/pin.svg');
+			background-repeat: no-repeat;
+			background-position: left center;
+			padding-left: 10%;
+		}
+	}
+	&__line {
+		border-bottom: 1px solid c(blue);
+		width: 20px;
+		@include center('y')
+		right: 0;
+		&--left {
+			right: inital;
+			left:0;
+		}
+	}
+}
+.grid__box--steps{
+	padding: 25px !important;
+	@include under(smaller-table){
+		padding: 5px !important;
+	}
+}

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="34"
+   height="36"
+   viewBox="0 0 34 36.000001"
+   id="svg21709"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="logoFooter-menuResponsive.svg">
+  <defs
+     id="defs21711">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath21014">
+      <path
+         d="M 0,568 320,568 320,0 0,0 0,568 Z"
+         id="path21016"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="-27.030509"
+     inkscape:cy="-5.2793236"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1299"
+     inkscape:window-height="744"
+     inkscape:window-x="67"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata21714">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-1016.3622)">
+    <g
+       id="g21758"
+       transform="translate(-679.72842,24.91385)">
+      <g
+         transform="matrix(1.25,0,0,-1.25,707.61742,1019.6399)"
+         id="g21022">
+        <path
+           inkscape:connector-curvature="0"
+           id="path21024"
+           style="fill:#00a1c4;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           d="m 0,0 c -0.189,0 -0.346,0.247 -0.346,0.547 l 0,0.066 c 0,0.302 0.157,0.547 0.346,0.547 l 4.013,0 c 0.191,0 0.346,-0.245 0.346,-0.547 l 0,-0.066 C 4.359,0.247 4.204,0 4.013,0 L 0,0 Z" />
+      </g>
+      <g
+         transform="matrix(1.25,0,0,-1.25,707.61742,1025.2759)"
+         id="g21026">
+        <path
+           inkscape:connector-curvature="0"
+           id="path21028"
+           style="fill:#00a1c4;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           d="m 0,0 c -0.189,0 -0.346,0.247 -0.346,0.547 l 0,0.066 c 0,0.302 0.157,0.547 0.346,0.547 l 4.013,0 c 0.191,0 0.346,-0.245 0.346,-0.547 l 0,-0.066 C 4.359,0.247 4.204,0 4.013,0 L 0,0 Z" />
+      </g>
+      <g
+         transform="matrix(1.25,0,0,-1.25,692.84192,1008.1451)"
+         id="g21030">
+        <path
+           inkscape:connector-curvature="0"
+           id="path21032"
+           style="fill:#00a1c4;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           d="M 0,0 C 0,1.608 1.274,2.911 2.849,2.911 4.426,2.911 5.7,1.608 5.7,0 5.7,-1.608 4.426,-2.912 2.849,-2.912 1.274,-2.912 0,-1.608 0,0" />
+      </g>
+      <g
+         transform="matrix(1.25,0,0,-1.25,706.07842,1012.1686)"
+         id="g21034">
+        <path
+           inkscape:connector-curvature="0"
+           id="path21036"
+           style="fill:#00a1c4;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           d="m 0,0 c 0.403,1.024 0.611,2.102 0.611,3.218 0,4.705 -3.746,8.528 -8.351,8.528 -4.6,0 -8.349,-3.823 -8.349,-8.528 0,-4.499 3.426,-8.194 7.752,-8.504 0.05,0.113 0.11,0.18 0.17,0.18 l 2.042,0 2.954,1.998 4.025,0 c -0.565,0 -1.021,-1.957 -1.021,-4.372 0,-2.415 0.456,-4.371 1.021,-4.371 l -4.025,0 -2.954,1.997 0,0.024 -2.042,0 c -0.062,0 -0.125,0.074 -0.179,0.2 -6.665,0.325 -11.99,5.96 -11.99,12.848 0,7.096 5.65,12.866 12.596,12.866 6.948,0 12.6,-5.77 12.6,-12.866 0,-1.438 -0.234,-2.842 -0.689,-4.183 l -4.741,0 L 0,0 Z" />
+      </g>
+    </g>
+  </g>
+</svg>

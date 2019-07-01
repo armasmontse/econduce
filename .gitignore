@@ -1,0 +1,14 @@
+*.DS_Store
+wordpress/wp-config.php
+wordpress/.htaccess
+wordpress/wp-content/advanced-cache.php
+wordpress/wp-content/debug.log
+wordpress/wp-content/cache/
+wordpress/wp-content/uploads/
+wordpress/wp-content/w3tc-config/
+wordpress/wp-content/plugins/sendgrid-email-delivery-simplified/
+wordpress/wp-content/plugins/swift-mailer/
+wordpress/wp-content/themes/cool/cltvo/sass/.sass-cache/
+wordpress/wp-content/themes/econduce-theme/node_modules/
+*.scssc
+config.codekit

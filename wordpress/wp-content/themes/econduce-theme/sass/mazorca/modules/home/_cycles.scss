@@ -1,0 +1,70 @@
+.cycles {
+    background-color: c(new-navy-blue);
+    @include aspect-ratio(1280, 137)
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    &__container {
+        position: relative;
+    }
+
+    &__city {
+        &-container {
+            svg {
+                display: block;
+            }
+        }
+    }
+    @mixin muneco-container {
+        &__container {
+            position: absolute;
+            top: -66%;
+            width: 15%;
+            transform: translateX(-100%);
+            @content;
+        }
+    }
+
+    @mixin semaforo-container {
+        &__container {
+            position: absolute;
+            width: 3%;
+            top: -134%;
+            transform: translateX(-50%);
+            svg {
+                .rojo, .amarillo {
+                    fill: #999
+                }
+            }
+            @content;
+        }
+    }
+    &-muneco1 {
+        @include muneco-container {
+            left: -10%;
+        }
+    }
+
+    &-muneco2 {
+        @include muneco-container {
+            left: -10%;
+        }
+    }
+
+    &-muneco3 {
+        @include muneco-container {
+            left: -10%;
+        }
+    }
+
+    &-semaforo1 {
+      @include semaforo-container {
+        left: 33%;
+      }
+    } 
+    &-semaforo2 {
+      @include semaforo-container {
+        left: 66%;
+      }
+    } 
+}

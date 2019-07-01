@@ -1,0 +1,255 @@
+.counter {
+    @mixin counter-w-and-fz($scale) {
+        transform: scale($scale) translateX(-50%*1/$scale);
+    }
+    position: relative;
+    margin: 5px;
+    height: 80px;
+    font-family: f(Gotham);
+    font-size: 60px;
+    width: 60px;
+    font-weight: normal;
+    line-height: 87px;
+
+    &.is-zero {
+        opacity: 0;
+    }
+
+    &.is-zero + &.comma {
+        display: none;
+    }
+
+    &__container {
+        @include center('x');
+        display: flex;
+        top: 10%;
+        @include under(sm) {@include counter-w-and-fz(0.7); top: 5%;}
+        @include under(sm-smaller) {@include counter-w-and-fz(0.5);top: -10px;}
+        left: 50%;
+
+        .flex {
+            display: flex;
+        }
+    }
+}
+
+.counter__main {
+    position: absolute;
+    @include center('x');
+    top: 90px;
+    @include under(sm) { top: 30px;}
+    width: 700px;
+
+    &-ttl {
+        font-family: f(sans-serif);
+        position: relative;
+        top: -50px;
+        text-align: center;
+        width: 100%;
+        font-weight: 400;
+        @include under(sm) { top: -20px;}
+        @include under(xs) { top: -15px;}
+        font-size: 34px;
+        @include under (xs) {font-size: 20px;}
+        color: c(white);
+        @include under(xs){
+            font-size: 22px;
+        }
+    }
+    /* Skeleton */
+
+    ul.counter li {
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        &.active {
+            opacity: 1;
+        }
+
+        &.before{
+            transition: opacity 0.7s ease;
+        }
+
+        &.active {
+            transition: opacity 0.1s ease;
+        }
+    }
+
+    ul.counter li:first-child {
+        z-index: 2;
+    }
+
+    ul.counter li span {
+        display: block;
+        height: 100%;
+        perspective: 200px;
+    }
+
+    ul.counter li span div {
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+    }
+
+    ul.counter li span div .shadow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+
+    ul.counter li span div.up {
+        transform-origin: 50% 100%;
+        top: 0;
+    }
+
+    ul.counter li span div.down {
+        transform-origin: 50% 0%;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.04);
+    }
+
+    ul.counter li span div div.inn {//interior de los números
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 200%;
+        color: #fff;
+        text-align: center;
+        background-color: rgba(3,3,3,0.05);
+    }
+
+    ul.counter li span div.up div.inn {
+        top: 0;
+
+    }
+
+    ul.counter li span div.down div.inn {
+        bottom: 0;
+    }
+}
+/* PLAY */
+
+body.counter-play_JS .counter__main ul li.before {
+    z-index: 3;
+}
+
+body.counter-play_JS .counter__main ul li.active {
+    animation: asd .2s .2s linear both;
+    z-index: 2;
+}
+
+@keyframes asd {
+    0% {
+        z-index: 2;
+    }
+    5% {
+        z-index: 4;
+    }
+    100% {
+        z-index: 4;
+    }
+}
+
+body.counter-play_JS .counter__main ul li.active .down {
+    z-index: 2;
+    animation: turn .2s .2s linear both;
+}
+
+@keyframes turn {
+    0% {
+        transform: rotateX(90deg);
+    }
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+body.counter-play_JS .counter__main ul li.before .up {
+    z-index: 2;
+    animation: turn2 .2s linear both;
+}
+
+@keyframes turn2 {
+    0% {
+        transform: rotateX(0deg);
+    }
+    100% {
+        transform: rotateX(-90deg);
+    }
+}
+
+/* SHADOW */
+$sombra: rgba(28, 192, 231, 0.5);
+$sombra-before: rgba(9, 84, 102, 0.1);
+$sombra-transparencia: rgba(28, 192, 231, 0.53);
+
+/*before*/
+body.counter-play_JS .counter__main ul li.before .up .shadow {
+    background: -moz-linear-gradient(top, $sombra-transparencia  0%, $sombra-before 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $sombra-transparencia ), color-stop(100%, $sombra));
+    background: linear-gradient(top, $sombra-transparencia  0%, $sombra-before 100%);
+    background: -o-linear-gradient(top, $sombra-transparencia  0%, $sombra-before 100%);
+    background: -ms-linear-gradient(top, $sombra-transparencia  0%, $sombra-before 100%);
+    background: linear-gradient(to bottom, $sombra-transparencia  0%, $sombra-before 100%);
+    animation: show .2s linear both;
+}
+
+body.counter-play_JS .counter__main ul li.before .down .shadow {
+    background: -moz-linear-gradient(top, $sombra-before 0%, $sombra-transparencia  100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $sombra), color-stop(100%, $sombra-transparencia ));
+    background: linear-gradient(top, $sombra-before 0%, $sombra-transparencia  100%);
+    background: -o-linear-gradient(top, $sombra-before 0%, $sombra-transparencia  100%);
+    background: -ms-linear-gradient(top, $sombra-before 0%, $sombra-transparencia  100%);
+    background: linear-gradient(to bottom, $sombra-before 0%, $sombra-transparencia  100%);
+    animation: show .2s linear both;
+}
+
+body.counter-play_JS .counter__main ul li.active .up .shadow {
+    background: -moz-linear-gradient(top, $sombra-transparencia  0%, $sombra 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $sombra-transparencia ), color-stop(100%, $sombra));
+    background: linear-gradient(top, $sombra-transparencia  0%, $sombra 100%);
+    background: -o-linear-gradient(top, $sombra-transparencia  0%, $sombra 100%);
+    background: -ms-linear-gradient(top, $sombra-transparencia  0%, $sombra 100%);
+    background: linear-gradient(to bottom, $sombra-transparencia  0%, $sombra 100%);
+    animation: hide .2s .1s linear both;
+}
+
+/*active*/
+
+
+body.counter-play_JS .counter__main ul li.active .down .shadow {
+    background: -moz-linear-gradient(top, $sombra 0%, $sombra-transparencia  100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $sombra), color-stop(100%, $sombra-transparencia ));
+    background: linear-gradient(top, $sombra 0%, $sombra-transparencia  100%);
+    background: -o-linear-gradient(top, $sombra 0%, $sombra-transparencia  100%);
+    background: -ms-linear-gradient(top, $sombra 0%, $sombra-transparencia  100%);
+    background: linear-gradient(to bottom, $sombra 0%, $sombra-transparencia  100%);
+    animation: hide .2s .1s linear both;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

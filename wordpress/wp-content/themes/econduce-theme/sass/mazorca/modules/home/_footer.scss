@@ -1,0 +1,230 @@
+.footer {
+	background-color: c(new-navy-blue);
+	color: c(white);
+	font-size: 14px;
+	padding-top: 5%;
+	font-family: f(sans-serif);
+	font-weight: normal;
+	// &__col {
+	// 	&-servicios {
+	// 		margin-left: -4%;
+	// 		@include under (sm) {
+	// 			margin-left: 0%;
+	// 		}
+	// 	}
+	// 	&-informacion {
+	// 		@include between (bag, md-medium) {
+	// 			margin-left: -12%;
+	// 		}
+	// 	}
+	// }
+
+	&__titles {
+		color: c(new-light-blue);
+		font-size: 13px;
+		font-family: f(sans-serif);
+		font-weight: 500;
+		letter-spacing: 3px;
+		@include under(sm) {
+			cursor: pointer;
+		}
+		&-border {
+			border-bottom: solid 1px c(white);
+			margin-top: 12px;
+			@include under(sm) {
+				border-bottom: solid 1px c();
+			}
+		}
+		&--right-arrow {
+			display: none;
+			@include under (sm) {
+				display: inline-block;
+			}
+		}
+	}
+	&__menu {
+		@include under(sm) {
+			display: none;
+		}
+		.menu-item {
+			line-height: 300%;
+			font-weight: 500;
+			&:hover {
+				color: c(light-gray);
+			}
+		}
+		&-items {
+			line-height: 300%;
+			&:hover {
+				color: c(light-gray);
+			}
+		}
+	}
+	&__horarios {
+		margin-top: 5%;
+		font-weight: 500;
+		&-paragraph1 {
+			@include under (sm) {
+				display: none;
+			}
+		}
+		&--bold {
+			font-family: f(sans-serif);
+			font-weight: bold;
+		}
+		&-box {
+			// margin-left: -27%;
+			@include under (sm) {
+				margin-left: 0%;
+			}
+		}
+	}
+	&__logo {
+		display: inline-block;
+		&__descargar-app-row {
+			margin: 3% auto;
+		}
+		&--android {
+			margin-left: -1%;
+		}
+		&--social-media {
+			display: flex;
+			justify-content: space-around;
+			max-width: 400px;
+			flex-wrap: wrap;
+			flex-direction: row;
+			@include under (md-medium) {
+				margin-left: 0%;
+				width: 100%;
+				justify-content: space-between;
+				max-width: 350px;
+			}
+			@include under(sm-smaller) {
+				max-width: 180px;
+			}
+			&-items {
+				@include under (sm) {
+					width: 30px;
+					height: 30px;
+				}
+			}
+		}
+		&-icon {
+			height: 45px;
+			width: calc(45px + 20px);
+		}
+		&-responsive {
+			@include under(sm) {
+				display: flex;
+    			flex-direction: row;
+    			flex-wrap: wrap;
+    			justify-content: space-between;
+			}
+		}
+	}
+	&__icons {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+	&__second {
+		background-color: c(new-dark-blue);
+		padding-top: 5px;
+    	padding-bottom: 5px;
+		//padding: 2% 0%;
+		@include under (sm) {
+			display: none;
+		}
+		&--econduce {
+			display: inline-block;
+		}
+		&--text {
+			color: c(white);
+			font-size: 13px;
+			display: inline-block;
+			&--font-size {
+				font-size: 34px;
+			}
+		}
+		&--chat {
+			margin-left: 94%;
+			margin-top: 5%;
+			&-responsive {
+				@include under (sm) {
+					width: 30px;
+					height: 30px;
+					display: flex;
+				}
+			}
+		}
+	}
+	&__descargar-app {
+		width: 100%;
+		padding: 20px;
+		@include under (sm) {
+			display: none;
+		}
+	}
+	&__responsive {
+		display: none;
+		@include under (sm) {
+			display: block;
+			padding-top: 30px;
+			padding-bottom: 15px;
+		}
+	}
+
+	&__app-box {
+		display: flex;
+	    flex-direction: row;
+	    max-width: 325px;
+	    flex-wrap: wrap;
+	    justify-content: space-between;
+	    width: 100%;
+		&-logo {
+			width: 100%;
+			max-width: 150px;
+		}
+	}
+	&__none {
+		@include under(sm) {
+			display: none;
+		}
+	}
+	&__copyright {
+		display: flex;
+		align-items: center;
+
+		&-text {
+			margin-left: 5px;
+			display: flex;
+			margin-top: 5px;
+		}
+
+		&-container {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			flex-wrap: nowrap;
+			align-items: center;
+			padding: 10px 0px;
+		}
+		&-icon {
+			width: 100%;
+    		max-width: 35px;
+		}
+		&-logo {
+			width: 39px;
+		}
+	}
+
+}
+
+#talkus-button {
+	background-image: url('../images/icons/chatIcon.svg') !important;
+	background-color: c(new-dark-blue) !important;
+	border-color: c(new-dark-blue) !important;
+	background-size: 35px !important;
+	bottom: 5px !important;
+}

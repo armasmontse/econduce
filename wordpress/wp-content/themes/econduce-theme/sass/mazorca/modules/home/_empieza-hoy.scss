@@ -1,0 +1,112 @@
+.empieza-hoy {
+	&__title {
+		font-weight: 400;
+		font-size: 28px;
+		@include center('x');
+		position: absolute;
+		top: 25px;
+		@include under(sm) {
+			width: 100%;
+    		text-align: center;
+		}
+		@include under(sm-smaller) {
+			font-size: 20px;
+		}
+
+	}
+	&__cta {
+		@include center('xy');
+		width: 100%;
+		text-align: center;
+		font-size: 14px;
+		font-family: f(ProximaNova);
+		font-weight:normal;
+		&-container {
+			@include center('xy');
+			background-color: rgba(255,255,255,0.8);
+			width: 90%;//calc(100% - 10px)
+			height: 90%;
+			border-radius: 100%;
+			transition: all 0.3s ease;
+			opacity: 0;
+		}
+	}
+	&__image {
+		width: 170px;
+		height: 170px;
+    	margin: 20% auto 12% auto;
+    	position: relative;
+    	max-width: 170px;
+    	@include under(xs) {
+			width: 100px;
+			height: 100px;
+			margin: 0 auto;
+		}
+
+		&:hover {
+			.empieza-hoy__cta-container {
+				opacity: 1;
+			}
+		}
+
+		&-center {
+			margin-top: 15%;
+		}
+		&-side {
+			margin-top: 10%;
+			margin-bottom: 23px;
+
+			@include under(three){
+				margin-top: 5%;
+				margin-bottom: 15px;
+			}
+			@include under(sm){
+				margin-top: 6%;
+				margin-bottom: 10px;
+			}
+			img {
+				@include under(xs) {
+					width: 100px;
+					height: 100px;
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+	&__lineas {
+		border-left: 1px solid c(medium-gray);
+		border-right: 1px solid c(medium-gray);
+		@include under(three) {
+			border: none;
+		}
+
+	}
+	&__paragraph {
+		text-align: center;
+		font-family: f(ProximaNova);
+		font-weight:normal;
+		font-size: 18px;
+		line-height: 150%;
+	}
+}
+.empiezaCont{
+	@include under(three) {
+		height: 50px;
+	}
+
+}
+.empiezaRow{
+	padding-bottom: 25px;
+}
+.empieza-hoy__title.title-mobile{
+	color: c(darky-medium-gray);
+	@include over(three) {
+		display: none;
+	}
+}
+.empieza-hoy__title.title-desktop{
+	color: c(darky-medium-gray);
+	@include under(three) {
+		display: none;
+	}
+}

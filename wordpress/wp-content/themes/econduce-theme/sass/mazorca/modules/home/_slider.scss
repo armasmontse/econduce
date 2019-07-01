@@ -1,0 +1,172 @@
+.slider {
+    &__bgc {
+        // @include under(sm) {
+        //  background-color: c(white);
+        // }
+    }
+    &__button {
+        &-next {
+            background-image: url('../images/slideEmprendedores/right-arrow.svg');
+            top: 42%;
+        }
+        &-prev {
+            background-image: url('../images/slideEmprendedores/right-arrow.svg');
+            top: 42%;
+            transform: rotate(180deg);
+        }
+    }
+    &-nav {
+        width: 100% !important;
+        height: 90px !important;
+        margin: auto;
+
+        .slider__logo {
+            height: 100%;
+            outline:none;
+            padding: 40px 30px;
+            @include under(xs){
+              padding: 40px 6px;
+              margin: 0 7px;
+            }
+
+            //seleccion
+            &.slick-center {
+              .slider__img {
+                opacity: 0;
+                &--selected {
+                  opacity: 1;
+                }
+              }
+            }
+        }
+
+        .slider__slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            position: relative;
+
+            &--unotv {
+              .slider__img {
+                max-width: 90px;
+              }
+            }
+
+            .slider__img {
+                position: absolute;
+                @include center('xy');
+                max-height: 56px;
+                width:auto;//importante que se auto, para mantener la relación de aspecto via mex-height
+                &--selected {
+                  opacity: 0;
+                }
+            }
+        }
+
+      @include slick-arrow;
+
+    }
+
+    &-for {
+      width: 100% !important;
+      height: auto !important;
+      background-color: c(slider-gray);
+      margin: 0px auto 1px;
+      overflow: hidden;
+      @include under(sm-smaller) {
+        max-height: 150px;
+      }
+    }
+}
+
+.slider__with-media-icons {
+    &-container {
+        position:relative;
+        .slick-list,
+        .slick-track {
+            height: 100% !important;
+        }
+    }
+    &-selected-slide-arrow {
+        height: 20px;
+        @include center('x');
+        top: -5px;
+    }
+
+}
+
+.slick-current .slider__img .st0 {
+	fill: #454646 !important;
+}
+
+.slick-prev {
+    &::before {
+
+    }
+}
+
+.slider-nav .slick-list {//por lo menos hay que encapsular esto agregando .slider-nav
+	width: calc(100% - 130px) !important;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px 45px !important;
+}
+
+.slick-prev, .slick-next {
+	width: 26px !important;
+	height: 26px !important;
+}
+
+.slider-for .slick-slide {
+    position:relative;
+    max-width: 100vw;
+    width: 100% !important;
+}
+
+.slider-nav .slick-current:before {
+    display: none;
+}
+
+.swiper-container {
+  width: 100%;
+  margin-left: auto;
+   margin-right: auto;
+}
+.container-height {
+  height: 600px;
+}
+
+.swiper-wrapper-medios {
+  height: 183px;
+}
+
+.swiper-slide {
+  background-size: contain;
+  background-position: center;
+}
+
+.gallery-top {
+  height: 80%;
+  width: 100%;
+}
+.gallery-thumbs {
+  height: 15vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 0%;
+}
+.gallery-thumbs .swiper-slide {
+  width: 150px !important;
+  background-repeat: no-repeat;
+  height: 80px;
+  opacity: 0.4;
+}
+.gallery-thumbs .swiper-slide-active {
+  opacity: 1;
+}
+
+
+.slider-nav .slick-track{
+  height: 85px;
+}

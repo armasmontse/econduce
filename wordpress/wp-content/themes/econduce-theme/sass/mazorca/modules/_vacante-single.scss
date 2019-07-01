@@ -1,0 +1,107 @@
+.vacante-single {
+	
+	&__ttl {
+		color: c(white);
+		font-size: 32px;
+		padding: 22px 0;
+		@include under(sm){
+			font-size: 20px;
+			letter-spacing: 0px;
+			padding: 15px 0px;
+			line-height: 1;
+		}
+
+		&:after,
+		&:before {
+			content: '—';
+			display: inline-block;
+			color: white;
+			font-size: 32px;
+			margin: 0 10px;
+		}
+
+		&-box {
+			background: linear-gradient(90deg, #1BA7CC 0%, #1FC0C8 50%, #1BA7CC 100%);
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	&__row {
+		padding: 48px 24px;
+	}
+
+	&__col {
+		text-align: center;
+		padding-bottom: 24px;
+	}
+
+	&__content--two-columns,
+	&__content {
+		p, ul, ol, ul li, ol li {
+			margin-bottom: 24px;
+			font-size: 18px;
+			line-height: 21.6px;
+			font-family: f(sans-serif);
+			font-weight: 300;
+			@include under(sm){
+				font-size: 14px;
+				letter-spacing: 0px;
+				line-height: 1.6;
+			}
+		}
+
+		b {
+			font-weight: bold;
+		}
+
+		i {
+			font-style: italic;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			font-size: 20px;
+			margin-bottom: 24px;
+			letter-spacing: 1px;
+			color: c(vacancy-ttl);
+			font-family: f(sans-serif);
+			font-weight: normal;
+			@include under(sm){
+				font-size: 18px;
+				letter-spacing: 0px;
+			}
+		}
+	}
+
+	&__content {
+		&--two-columns {
+			-webkit-column-count: 2; /* Chrome, Safari, Opera */
+		    -moz-column-count: 2; /* Firefox */
+		    column-count: 2;
+		    -webkit-column-gap: 82px; /* Chrome, Safari, Opera */
+		    -moz-column-gap: 82px; /* Firefox */
+		    column-gap: 82px;
+
+
+		    @include under(sm) {
+	    		-webkit-column-count: 1; /* Chrome, Safari, Opera */
+	    	    -moz-column-count: 1; /* Firefox */
+	    	    column-count: 1;
+		    }
+		}
+	}
+
+	&__subttl {
+		font-size: 20px;
+		margin-bottom: 24px;
+		color: c(vacancy-ttl);
+		letter-spacing: 1px;
+		font-family: f(sans-serif);
+		font-weight: normal;
+		line-height: 24px;
+		@include under(sm){
+			font-size: 18px;
+			letter-spacing: 0px;
+		}
+	}
+}

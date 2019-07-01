@@ -1,0 +1,122 @@
+  .characteristics{
+    width: 75%;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    @include under(sm-smaller) {
+      width: 97%;
+    }
+    @include under(three) {
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
+    .grid__col-1-3 {
+      @include under(three) {
+        max-width: 50%;
+        width: 50%;
+      }
+
+    }
+  }
+
+  /*Columnas 4*/
+  .columnsFour{
+    .grid__box--steps{
+      padding: 0% 5px 5% 5px;
+    }
+    .empieza-hoy{
+      &__image{
+        width: 170px;
+        height: 170px;
+        margin-top: 7%;
+        @include under(xs){
+          width: 100%;
+          height: auto;
+          margin-top: 0%;
+        }
+      }
+      &__paragraph{
+
+        p:last-child {
+          @include under(xs){
+            display: none;
+          }
+        }
+        @include under(xs) {
+          padding: 0px 18px;
+        }
+      }
+    }
+    &__padd{
+
+      .grid__box--steps{
+        padding: 24px 0px 34px 0px !important;
+      }
+      .empieza-hoy{
+        &__image{
+          margin-top: 0px;
+        }
+      }
+    }
+    .three-images__title{
+      display: none;
+    }
+
+  }
+
+.right{
+  @include under(three) {
+
+    float:none !important;
+  }
+}
+
+.left{
+  @include under(three) {
+
+    float:none !important;
+  }
+}
+.estaciones__title{
+  // padding: 0px;
+  letter-spacing: 1px !important;
+}
+.divisor{
+  padding-top: 0px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.estaciones__line{
+  top:50px;
+}
+
+  .empieza-hoy__paragraph{
+    font-size: 16px;
+    font-family: f(sans-serif);
+    font-weight: 300;
+    letter-spacing: 1px;
+    @include under(xs) {
+      line-height: 20px;
+    }
+    p:nth-child(1){
+      font-family: f(sans-serif);
+      font-weight: normal;
+      font-size: 18px;
+      font-weight: normal;
+      letter-spacing: 1px;
+      color: #808080;
+      @include under(xs) {
+        font-size: 16px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+  .empieza-hoy__lineas{
+    border-left: 1px solid rgba(153,153,153,0.28);
+    border-right: 1px solid rgba(153,153,153,0.28);
+    border-top: 1px solid rgba(153,153,153,0.28);
+    @include under(three) {
+      border-left: 0px solid rgba(153,153,153,0.28);
+      border-right: 0px solid rgba(153,153,153,0.28);
+      border-top: 0px solid rgba(153,153,153,0.28);
+    }
+  }

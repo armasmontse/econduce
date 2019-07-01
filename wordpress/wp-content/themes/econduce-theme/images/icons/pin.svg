@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="30"
+   height="42"
+   viewBox="0 0 30 42.000001"
+   id="svg17164"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="pin.svg">
+  <defs
+     id="defs17166">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath12128">
+      <path
+         d="m 0,4154.561 1280,0 L 1280,0 0,0 0,4154.561 Z"
+         id="path12130"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath12106">
+      <path
+         d="m 867.981,3564.928 c 0,-6.313 11.432,-21.435 11.432,-21.435 l 0,0 c 0,0 11.433,15.122 11.433,21.435 l 0,0 c 0,6.314 -5.119,11.433 -11.433,11.433 l 0,0 c -6.313,0 -11.432,-5.119 -11.432,-11.433"
+         id="path12108"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(22.86463,0,0,-22.86463,867.9809,3559.9268)"
+       spreadMethod="pad"
+       id="linearGradient12114">
+      <stop
+         style="stop-opacity:1;stop-color:#00a7ce"
+         offset="0"
+         id="stop12116" />
+      <stop
+         style="stop-opacity:1;stop-color:#00c0c9"
+         offset="0.46926"
+         id="stop12118" />
+      <stop
+         style="stop-opacity:1;stop-color:#00c098"
+         offset="1"
+         id="stop12120" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="60.917337"
+     inkscape:cy="64.713461"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1299"
+     inkscape:window-height="744"
+     inkscape:window-x="67"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata17169">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-1010.3622)">
+    <g
+       transform="matrix(1.25,0,0,-1.25,-1084.214,5481.7054)"
+       id="g12102">
+      <g
+         id="g12104"
+         clip-path="url(#clipPath12106)">
+        <g
+           id="g12110">
+          <g
+             id="g12112">
+            <path
+               d="m 867.981,3564.928 c 0,-6.313 11.432,-21.435 11.432,-21.435 l 0,0 c 0,0 11.433,15.122 11.433,21.435 l 0,0 c 0,6.314 -5.119,11.433 -11.433,11.433 l 0,0 c -6.313,0 -11.432,-5.119 -11.432,-11.433"
+               style="fill:url(#linearGradient12114);stroke:none"
+               id="path12122"
+               inkscape:connector-curvature="0" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="matrix(1.25,0,0,-1.25,-1084.214,5481.7054)"
+       clip-path="url(#clipPath12128)"
+       id="g12126">
+      <g
+         transform="translate(887.7172,3564.7539)"
+         id="g12132">
+        <path
+           inkscape:connector-curvature="0"
+           id="path12134"
+           style="fill:#f7f7f7;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           d="m 0,0 c 0,-4.437 -3.597,-8.034 -8.034,-8.034 -4.437,0 -8.033,3.597 -8.033,8.034 0,4.437 3.596,8.034 8.033,8.034 C -3.597,8.034 0,4.437 0,0" />
+      </g>
+    </g>
+    <text
+       y="1030.4272"
+       x="10.109183"
+       style="font-variant:normal;font-weight:300;font-stretch:normal;font-size:16.77587509px;font-family:'Proxima Nova Lt';-inkscape-font-specification:ProximaNova-Light;writing-mode:lr-tb;fill:#00c0c9;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text12136">
+      <tspan
+         x="10.109183"
+         y="1030.4272"
+         id="tspan12138">A</tspan>
+    </text>
+  </g>
+</svg>

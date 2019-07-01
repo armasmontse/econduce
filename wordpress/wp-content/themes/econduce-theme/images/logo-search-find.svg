@@ -1,0 +1,11 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 22.2 22.2" style="enable-background:new 0 0 22.2 22.2;" xml:space="preserve">
+<line style="fill:none;stroke:#1BBDC8;stroke-miterlimit:10;" x1="11.1" y1="3" x2="11.1" y2="0"/>
+<g>
+	<circle style="fill:none;stroke:#1BBDC8;stroke-miterlimit:10;" cx="11.1" cy="11.1" r="8.1"/>
+	<circle style="fill:#1BBDC8;" cx="11.1" cy="11.1" r="3.7"/>
+	<line style="fill:none;stroke:#1BBDC8;stroke-miterlimit:10;" x1="11.1" y1="22.2" x2="11.1" y2="19.2"/>
+	<line style="fill:none;stroke:#1BBDC8;stroke-miterlimit:10;" x1="0" y1="11.1" x2="3" y2="11.1"/>
+	<line style="fill:none;stroke:#1BBDC8;stroke-miterlimit:10;" x1="19.2" y1="11.1" x2="22.2" y2="11.1"/>
+</g>
+</svg>
