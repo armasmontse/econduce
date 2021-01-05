@@ -44,7 +44,7 @@
   },
   "homepage": "https://github.com/el-cultivo/cltvo-blank-wptheme#readme",
   "dependencies": {
-    "axios": "0.17.0",
+    "axios": "0.21.1",
     "es6-promise": "4.1.1",
     "hyperscript": "2.0.2",
     "hyperscript-helpers": "3.0.3",
